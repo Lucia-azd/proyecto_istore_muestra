@@ -1,0 +1,808 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+/* GENERALES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+/* HEADER */
+header {
+	background-color: #1c1c1c;
+}
+
+header .logo_iconos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+}
+
+header .contenedor_logo .logo {
+	color: #fff;
+	font-family: "Audiowide", cursive;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+header .iconos {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .iconos i {
+	color: #fff;
+	font-size: 20px;
+}
+
+header .nav {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	margin: 0 20px;
+	font-size: 20px;
+}
+
+/* MODAL USUARIO*/
+.fondo_modal_usuario {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	z-index: 2;
+}
+
+.modal_usuario {
+	background-color: #fff;
+	padding: 30px;
+	width: 90%;
+	border-radius: 15px;
+}
+
+.modal_usuario h2 {
+	padding-bottom: 15px;
+}
+
+#ingresar:target {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#registrarse:target {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal_cerrar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+form button {
+	margin-top: 20px;
+}
+
+form .nombre_apellido {
+	margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+	background-color: #1c1c1c;
+}
+
+footer .contenedor_logo .logo {
+	color: #fff;
+	font-family: "Audiowide", cursive;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+footer .contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	padding: 5% 0;
+}
+
+footer .links_footer {
+	display: flex;
+}
+
+footer .links_footer .li_titulo {
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	padding-bottom: 5px;
+}
+
+footer li a {
+	color: #6c757d;
+}
+
+footer li a:hover {
+	color: #5c636a;
+}
+
+footer .redes h5 {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+footer .redes i {
+	font-size: 25px;
+	padding: 20px;
+	color: #fff;
+}
+
+/*
+*
+*
+INDEX  
+*
+*
+*/
+/* LO MAS VENDIDO */
+.mas_vendido .contenedor {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.mas_vendido h2 {
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+	border-top: 2px solid #ededed;
+	border-bottom: 2px solid #ededed;
+	padding: 5% 0;
+}
+
+.mas_vendido article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5% 0;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.mas_vendido article:hover {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.125);
+}
+
+.mas_vendido .contenedor_img img {
+	width: 100%;
+	max-height: 250px;
+}
+
+.mas_vendido .contenedor_img {
+	width: 150px;
+}
+
+.mas_vendido article .descripcion {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.mas_vendido article h3 {
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+.mas_vendido article span {
+	text-decoration: line-through;
+	color: #9b9797;
+}
+
+.mas_vendido article p {
+	text-align: center;
+	color: #9b9797;
+	margin-bottom: 5px;
+}
+
+.mas_vendido article .precio {
+	color: #1c1c1c;
+	font-size: 25px;
+}
+
+.mas_vendido article .cuotas strong {
+	color: #8d8d8e;
+	font-size: 18px;
+}
+
+.mas_vendido article .boton_comprar {
+	border: 1px solid #1c1c1c;
+	background-color: #1c1c1c;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+
+.mas_vendido article .boton_comprar:hover {
+	background-color: #fff;
+	color: #1c1c1c;
+}
+
+/* POR QUE ELEGIRNOS (EN PROCESO)*/
+.elegirnos {
+	margin: 10% 0;
+}
+
+.elegirnos .contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f6f6f6;
+	border-radius: 10px 10px 0 0;
+	border: 10px;
+}
+
+.elegirnos h2 {
+	width: 100%;
+	text-align: center;
+	padding: 5% 0;
+	border: 2px solid #ededed;
+	border-radius: 10px 10px 0 0;
+	background-color: #fff;
+}
+
+.elegirnos article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	padding: 5% 0;
+}
+
+.elegirnos i {
+	font-size: 50px;
+}
+
+.elegirnos p {
+	text-align: center;
+	padding-top: 10%;
+}
+
+/* 
+*
+*
+*
+*PAGINAS 
+*
+*
+*
+*/
+/* LISTA GUIA */
+.lista_guia {
+	margin-top: 10px;
+}
+
+/* MENU SECUNDARIO */
+.menu_secundario .contenedor ul {
+	padding: unset;
+	margin: 40px 0;
+}
+
+.menu_secundario .contenedor ul li {
+	border-bottom: 2px solid #ededed;
+	padding: 10px 0;
+}
+
+.menu_secundario .contenedor ul li a {
+	color: #6c757d;
+}
+
+/* PRODUCTOS */
+.productos .titulo_producto {
+	color: #1c1c1c;
+}
+
+.productos .titulo_producto h2 {
+	margin: 25px 0;
+	font-size: 35px;
+}
+
+.productos article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5% 0;
+	border: 2px solid rgba(0, 0, 0, 0.125);
+	border-radius: 10px;
+	padding: 30px 0;
+}
+
+.productos .contenedor_img_producto {
+	width: 100px;
+}
+
+.productos .contenedor_img_producto img {
+	width: 100%;
+	max-height: 250px;
+}
+
+.productos article h3 {
+	margin-top: 20px;
+}
+
+.productos article .descripcion_producto {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	border-top: 2px solid rgba(0, 0, 0, 0.125);
+	width: 100%;
+}
+
+.productos article .descripcion_producto p {
+	margin-bottom: unset;
+	margin: 0 10%;
+}
+
+.productos article .descripcion_producto .precio {
+	padding-bottom: 10px;
+}
+
+.productos article .descripcion_producto .titulo_precio,
+.productos article .descripcion_producto .titulo_cuotas {
+	color: #9b9797;
+}
+
+.productos article .contenedor_botones .boton_detalles {
+	margin-right: 20px;
+}
+
+.productos article .contenedor_botones .boton_comprar,
+.productos article .contenedor_botones .boton_detalles {
+	border: 1px solid #1c1c1c;
+	background-color: #1c1c1c;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+
+.productos article .contenedor_botones .boton_comprar:hover,
+.productos article .contenedor_botones .boton_detalles:hover {
+	background-color: #fff;
+	color: #1c1c1c;
+}
+
+/* MODAL DETALLES PRODUCTO */
+
+.fondo_modal_detalles {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	z-index: 2;
+}
+
+.modal_detalles {
+	background-color: #fff;
+	padding: 30px;
+	width: 90%;
+	height: 90%;
+	overflow-y: scroll;
+}
+
+#detalles:target {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.especificaciones {
+	background-color: #e7e7e7;
+	border-radius: 10px 10px 0 0;
+}
+
+.especificaciones h2 {
+	padding: 5% 0;
+	border: 2px solid #ededed;
+	border-radius: 10px 10px 0 0;
+	background-color: #fff;
+	text-align: center;
+	margin: unset;
+}
+
+.especificaciones ul {
+	padding: unset;
+}
+
+.especificaciones ul li {
+	padding: 10px 25px;
+}
+
+.especificaciones ul li.color_gris_oscuro {
+	background-color: #ededed;
+}
+
+.especificaciones ul li.color_gris_claro {
+	background-color: #f6f6f6;
+}
+
+.info_producto {
+	border: 2px solid #ededed;
+	border-radius: 10px;
+	padding: 5%;
+}
+
+.info_producto h3 {
+	border-bottom: 2px solid #ededed;
+	padding-bottom: 5%;
+	margin-bottom: 10%;
+	text-align: center;
+}
+
+.modal_cerrar_detalles {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 10%;
+}
+
+.modal_cerrar_detalles a {
+	font-size: 20px;
+}
+
+/* 
+*
+*
+*
+MEDIA QUERIE
+*
+*
+*
+*/
+@media screen and (min-width: 767px) {
+	/* HEADER */
+	header .logo_iconos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+	header .iconos {
+		display: flex;
+		justify-content: unset;
+		width: unset;
+	}
+	header .iconos a.carrito {
+		margin: 0 30px;
+	}
+	/* LO MAS VENDIDO */
+	.mas_vendido h2 {
+		padding: 2% 0;
+	}
+	.mas_vendido .contenedor_img {
+		width: 200px;
+	}
+	.mas_vendido article .boton_comprar {
+		margin-top: 10px;
+	}
+	.mas_vendido article .boton_comprar a {
+		padding: 15px;
+		font-size: 20px;
+		border-radius: 15px;
+	}
+	/* POR QUE ELEGIRNOS */
+	.elegirnos h2 {
+		padding: 2% 0;
+	}
+	.elegirnos article {
+		width: 60%;
+		border-top: 2px solid #ededed;
+	}
+	.elegirnos article.item_uno {
+		border-top: unset;
+	}
+	.elegirnos i {
+		font-size: 70px;
+	}
+	.elegirnos p {
+		padding-top: 5%;
+		font-size: 20px;
+	}
+	/* PAGINAS PRODUCTOS */
+	/* CONTENEDOR GRID GENERAL SECCION MENU SECUNDARIO Y PRODUCTOS */
+	.contenedor_grid {
+		display: grid;
+		grid-template-columns: 0.5fr 1.5fr;
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 0px;
+		grid-column-gap: 15px;
+		grid-template-areas: "menu_secundario productos" "menu_secundario productos";
+	}
+	.menu_secundario {
+		grid-area: menu_secundario;
+	}
+	.productos {
+		grid-area: productos;
+	}
+	/* CONTENEDOR GRID PRODUCTOS */
+	.contenedor_grid_productos_iphone_12,
+	.contenedor_grid_productos_iphone_X {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 0px;
+		grid-column-gap: 5px;
+		grid-template-areas: "producto_uno producto_dos producto_tres" "producto_cuatro . .";
+	}
+	.contenedor_grid_productos_iphone_11,
+	.contenedor_grid_productos_mac_air,
+	.contenedor_grid_productos_mac_pro,
+	.contenedor_grid_productos_imac,
+	.contenedor_grid_productos_ipad,
+	.contenedor_grid_productos_ipad_air {
+		display: grid;
+		grid-template-columns: repeat(2, 0.35fr);
+		grid-template-rows: 1fr;
+		grid-row-gap: 0px;
+		grid-column-gap: 5px;
+		grid-template-areas: "producto_uno producto_dos .";
+	}
+	.contenedor_grid_productos_ipad_pro {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-row-gap: 0px;
+		grid-column-gap: 5px;
+		grid-template-areas: "producto_uno producto_dos producto_tres";
+	}
+	.productos article.item_producto_uno {
+		grid-area: producto_uno;
+	}
+	.productos article.item_producto_dos {
+		grid-area: producto_dos;
+	}
+	.productos article.item_producto_tres {
+		grid-area: producto_tres;
+	}
+	.productos article.item_producto_cuatro {
+		grid-area: producto_cuatro;
+	}
+	.productos article h3 {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.productos article .contenedor_botones .boton_detalles {
+		margin-right: unset;
+	}
+
+	.productos article .contenedor_botones {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.productos article .contenedor_botones .boton_comprar {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	/* MODAL DETALLES PRODUCTO */
+
+	.especificaciones h2 {
+		padding: 3% 0;
+	}
+
+	.info_producto {
+		padding: 3%;
+	}
+
+	.info_producto h3 {
+		padding-bottom: 3%;
+		margin-bottom: 5%;
+	}
+
+	.modal_cerrar_detalles {
+		padding-top: 5%;
+	}
+
+	/* FOOTER */
+	footer .contenedor {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: unset;
+	}
+	footer .links_footer {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	/* MODAL */
+	.modal_usuario {
+		width: 50%;
+	}
+	/* LO MAS VENDIDO */
+	.mas_vendido .contenedor {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.mas_vendido article {
+		padding: 15px;
+		justify-content: space-between;
+		width: 300px;
+	}
+	.mas_vendido .contenedor_img {
+		width: 100px;
+	}
+	.mas_vendido .contenedor_img.mac {
+		width: 150px;
+		margin: auto;
+	}
+	.mas_vendido article .boton_comprar a {
+		padding: 15.5px;
+		font-size: 20px;
+		border-radius: 15px;
+	}
+	/* POR QUE ELEGIRNOS */
+	.elegirnos {
+		margin: 5% 0;
+	}
+	.elegirnos .contenedor {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.elegirnos article {
+		width: 18%;
+		border: unset;
+		justify-content: center;
+	}
+	.elegirnos i {
+		font-size: 50px;
+	}
+	.elegirnos p {
+		font-size: 16px;
+	}
+	/* PAGINAS PRODUCTOS */
+	.productos .contenedor_img_producto.mac {
+		width: 150px;
+	}
+
+	.productos article .contenedor_botones {
+		display: unset;
+		margin-top: 10px;
+	}
+
+	.productos article .contenedor_botones .boton_detalles {
+		margin-right: 10px;
+	}
+
+	.productos article .contenedor_botones .boton_comprar {
+		text-align: unset;
+		margin-top: unset;
+	}
+
+	/* FOOTER */
+	footer .links_footer {
+		flex-direction: row;
+	}
+
+	/* MODAL DETALLES PRODUCTO */
+
+	.especificaciones h2 {
+		padding: 2% 0;
+	}
+
+	.info_producto {
+		padding: 2%;
+	}
+
+	.info_producto h3 {
+		padding-bottom: 2%;
+		margin-bottom: 2%;
+	}
+
+	.modal_cerrar_detalles {
+		padding-top: 2%;
+	}
+
+	.modal_cerrar_detalles a {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 1439px) {
+	/* HEADER */
+	header h1 {
+		font-size: 45px;
+	}
+	header .iconos i {
+		font-size: 25px;
+	}
+	header .nav a {
+		font-size: 25px;
+	}
+	/* LO MAS VENDIDO */
+	.mas_vendido .contenedor {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.mas_vendido h2 {
+		font-size: 40px;
+	}
+	.mas_vendido article {
+		justify-content: space-between;
+		align-items: center;
+	}
+	.mas_vendido .contenedor_img {
+		width: 200px;
+	}
+	.mas_vendido .contenedor_img.mac {
+		width: 250px;
+		margin: auto;
+	}
+	.mas_vendido article h3 {
+		font-size: 30px;
+	}
+	.mas_vendido article .boton_comprar a {
+		padding: 15px;
+		font-size: 20px;
+	}
+	/* POR QUE ELEGIRNOS */
+	.elegirnos h2 {
+		font-size: 40px;
+	}
+	.elegirnos i {
+		font-size: 65px;
+	}
+	.elegirnos p {
+		font-size: 18px;
+	}
+	/* PAGINAS PRODUCTOS */
+	.productos .contenedor_img_producto {
+		width: 150px;
+	}
+	.productos article h3 {
+		font-size: 25px;
+	}
+
+	.productos article .contenedor_botones .boton_detalles {
+		margin-right: 20px;
+	}
+
+	/* MODAL DETALLES PRODUCTO */
+
+	.especificaciones ul li {
+		font-size: 20px;
+	}
+
+	.info_producto p {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,74 @@
+@media screen and (min-width: 1439px) {
+	/* HEADER */
+
+	header h1 {
+		font-size: 45px;
+	}
+
+	header .iconos i {
+		font-size: 25px;
+	}
+
+	header .nav a {
+		font-size: 25px;
+	}
+
+	/* LO MAS VENDIDO */
+
+	.mas_vendido .contenedor {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.mas_vendido h2 {
+		font-size: 40px;
+	}
+
+	.mas_vendido article {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.mas_vendido .contenedor_img {
+		width: 200px;
+	}
+
+	.mas_vendido .contenedor_img.mac {
+		width: 250px;
+		margin: auto;
+	}
+
+	.mas_vendido article h3 {
+		font-size: 30px;
+	}
+
+	.mas_vendido article .boton_comprar a {
+		padding: 15px;
+		font-size: 20px;
+	}
+
+	/* POR QUE ELEGIRNOS */
+
+	.elegirnos h2 {
+		font-size: 40px;
+	}
+
+	.elegirnos i {
+		font-size: 65px;
+	}
+
+	.elegirnos p {
+		font-size: 18px;
+	}
+
+	/* PAGINAS PRODUCTOS */
+
+	.productos .contenedor_img_producto {
+		width: 150px;
+	}
+
+	.productos article h3 {
+		font-size: 25px;
+	}
+}

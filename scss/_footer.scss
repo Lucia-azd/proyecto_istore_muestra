@@ -1,0 +1,48 @@
+footer {
+	background-color: $color_principal;
+}
+
+footer .contenedor_logo .logo{
+	color: $color_secundario;
+	font-family: "Audiowide", cursive;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+footer .contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $color_secundario;
+	padding: 5% 0;
+}
+
+footer .links_footer {
+	display: flex;
+}
+
+footer .links_footer .li_titulo {
+	border-bottom: 2px solid $color_secundario;
+	color: $color_secundario;
+	padding-bottom: 5px;
+}
+
+footer li a {
+	color: rgb(108, 117, 125);
+}
+
+footer li a:hover {
+	color: rgb(92, 99, 106);
+}
+
+footer .redes h5 {
+	border-bottom: 2px solid $color_secundario;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+footer .redes i {
+	font-size: 25px;
+	padding: 20px;
+	color: $color_secundario;
+}

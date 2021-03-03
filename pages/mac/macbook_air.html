@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+        />
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <title>iStore | Macbook Air</title>
+</head>
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="contenedor">
+            <div class="logo_iconos">
+                <div class="contenedor_logo">
+                    <a href="../../index.html"><p class="logo">iStore</p></a>
+                </div>
+                <div class="iconos">
+                    <a href="#" class="carrito"><i class="fas fa-shopping-cart"></i></a>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="far fa-user-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#ingresar">Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="#registrarse">Registrarse</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVEGADOR -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../iphone/iphone_12.html">iPhone</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="macbook_air.html">Mac</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../ipad/ipad.html">iPad</a>
+                            </li>
+                            <li class="nav-item"><div class="dropdown">
+                                
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <!-- MODAL USUARIO -->
+
+    <section class="fondo_modal_usuario" id="ingresar">
+
+        <div class="modal_usuario">
+            <h2>Iniciar sesión</h2>
+            <form>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Contraseña</label>
+                    <div id="emailHelp" class="form-text"><a href="">¿Olvidaste tu contraseña?</a></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+
+            <div class="modal_cerrar"><a href="#">Cerrar</a></div>
+        </div>
+    </section>
+
+    <section class="fondo_modal_usuario" id="registrarse">
+        <div class="modal_usuario">
+            <h2>Registrarse</h2>
+
+            <form>
+                <div class="row nombre_apellido">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Acepto los <a href="">terminos y condiciones</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+            <a href="#" class="modal_cerrar">Cerrar</a>
+        </div>
+    </section>
+
+    <!-- LISTA GUIA -->
+
+    <section class="lista_guia">
+        <div class="contenedor">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Mac</li>
+                <li class="breadcrumb-item active" aria-current="page">Macbook Air</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    
+
+    <div class="contenedor contenedor_grid">
+
+        <!-- MENU SECUNDARIO -->
+
+        <section class="menu_secundario">
+            <div class="contenedor">
+                <ul>
+                    <li><a href="macbook_air.html">Macbook Air</a></li>
+                    <li><a href="macbook_pro.html">Macbook Pro</a></li>
+                    <li><a href="imac.html">iMac</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+
+        <section class="productos">
+            <div class="contenedor titulo_producto"> 
+                <h2>Macbook Air</h2> 
+            </div>
+            
+            <div class="contenedor_grid_productos_mac_air"> 
+                <article class="item_producto_uno">
+
+                    <div class="contenedor_img_producto mac">
+                        <img src="../../imagenes/MacBook_tres.jpg" alt="macbook">
+                    </div>
+
+                    <h3>Macbook Air 13"</h3>
+
+                    <div class="descripcion_producto">
+                        <p class="titulo_precio">Precio</p>
+                        <p class="precio"><strong>$99.999</strong></p>
+                        <p class="titulo_cuotas">Cuotas mensuales</p>
+                        <p class="cuotas"><strong>$9.999</strong></p>
+                    </div>
+
+                    <div class="contenedor_botones">
+                        <a href="#detalles" class="boton_detalles">Ver detalles</a>
+                        <a href="" class="boton_comprar">Comprar</a>
+                    </div>  
+
+
+                </article>
+
+                <article class="item_producto_dos">
+
+                    <div class="contenedor_img_producto mac">
+                        <img src="../../imagenes/MacBook_tres.jpg" alt="macbook">
+                    </div>
+
+                    <h3>Macbook Air 13.3"</h3>
+
+                    <div class="descripcion_producto">
+                        <p class="titulo_precio">Precio</p>
+                        <p class="precio"><strong>$99.999</strong></p>
+                        <p class="titulo_cuotas">Cuotas mensuales</p>
+                        <p class="cuotas"><strong>$9.999</strong></p>
+                    </div>
+
+                    <div class="contenedor_botones">
+                        <a href="#detalles" class="boton_detalles">Ver detalles</a>
+                        <a href="" class="boton_comprar">Comprar</a>
+                    </div>  
+
+
+                </article>
+            </div>
+
+            <!-- MODAL DETALLES-->
+
+            <section class="fondo_modal_detalles" id="detalles">
+                <div class="modal_detalles">
+                    <div class="especificaciones">
+                        <h2>Especificaciones</h2>
+                        <ul>
+                            <li class="color_gris_claro">Pantalla Super Retina XDR. Pantalla OLED de 6,1 pulgadas (diagonal) sin marco.Resolución de 2532 x 1170 pixeles a 460 ppi</li>
+                            <li class="color_gris_oscuro">Chip Apple A14 Bionic Neural Engine de última generación</li>
+                            <li class="color_gris_claro">Almacenamiento 64 GB, 128 GB, 256 GB</li>
+                            <li class="color_gris_oscuro">Sistema de dos cámaras de 12 MP: ultra gran angular y gran angular</li>
+                            <li class="color_gris_claro">Modo Retrato con bokeh avanzado y Control de Profundidad</li>
+                            <li class="color_gris_oscuro">Cámara TrueDepth Cámara de 12 MP</li>
+                            <li class="color_gris_claro">Estabilización automática de imagen</li>
+                            <li class="color_gris_oscuro">Captura de imagen en formatos HEIF y JPEG</li>
+                            <li class="color_gris_claro">Grabación de video HDR en Dolby Vision a un máximo de 30 cps</li>
+                            <li class="color_gris_oscuro">Grabación de video 4K a 24 cps, 30 cps o 60 cps</li>
+                            <li class="color_gris_claro">Grabación de video HD de 1080p a 30 cps o 60 cps</li>
+                            <li class="color_gris_oscuro">Grabación de video HD de 720p a 30 cps</li>
+                            <li class="color_gris_claro">Batería y energía Reproducción de video: Hasta 17 horas</li>
+                            <li class="color_gris_oscuro">Reproducción de video (streaming): Hasta 11 horas</li>
+                            <li class="color_gris_claro">Reproducción de audio: Hasta 65 horas</li>
+                        </ul>
+                    </div>
+
+                    <div class="info_producto">
+                        <h3>Información del Producto</h3>
+
+                        <p>
+                            La pantalla del iPhone 12 tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y las esquinas se encuentran dentro de un rectángulo estándar. Si se mide en forma de rectángulo estándar, la pantalla tiene 6,06 pulgadas en diagonal (el área real de visualización es menor).
+                        </p>
+
+                        <p><strong>Caja</strong></p>
+                        <p>iPhone con iOS 14, Cable de USB-C a Lightning, Documentación</p>
+                        <p><strong>Tarjeta SIM</strong></p>
+                        <p>Doble SIM (nano-SIM y eSIM)11 El iPhone 12 y el iPhone 12 mini no son compatibles con las tarjetas micro-SIM existentes.</p>
+                    </div>
+
+                    <div class="modal_cerrar_detalles"><a href="#">Cerrar</a></div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="contenedor">
+                <div class="contenedor_logo">
+                    <a href="../../index.html"><p class="logo">iStore</p></a>
+                </div>
+
+                <div class="links_footer">
+                    <div class="links_uno">
+                        <ul>
+                            <h5 class="li_titulo">iStore</h5>
+                            <li class="link_footer"><a href="">¿Quienes somos?</a></li>
+                            <li class="link_footer"><a href="">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links_dos">
+                        <ul>
+                            <h5 class="li_titulo">Soporte</h5>
+                            <li class="link_footer"><a href="">Preguntas frecuentes</a></li>
+                            <li class="link_footer"><a href="">Terminos y condiciones</a></li>
+                            <li class="link_footer"><a href="">Promociones vigentes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="redes">
+                    <h5>Redes</h5>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"
+></script>
+</body>
+</html>

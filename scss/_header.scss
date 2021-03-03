@@ -1,0 +1,35 @@
+
+header {
+	background-color: $color_principal;
+}
+
+header .logo_iconos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+}
+
+header .contenedor_logo .logo{
+	color: $color_secundario;
+	font-family: "Audiowide", cursive;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+header .iconos {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .iconos i {
+	color: $color_secundario;
+	font-size: 20px;
+}
+
+header .nav {
+	display: flex;
+	justify-content: center;
+}

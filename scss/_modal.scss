@@ -1,0 +1,51 @@
+.fondo_modal_usuario {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	z-index: 2;
+}
+
+.modal_usuario {
+	background-color: $color_secundario;
+	padding: 30px;
+	width: 90%;
+	border-radius: 15px;
+}
+
+.modal_usuario h2 {
+	padding-bottom: 15px;
+}
+
+#ingresar:target {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#registrarse:target {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal_cerrar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+form button {
+	margin-top: 20px;
+}
+
+form .nombre_apellido {
+	margin-bottom: 30px;
+}
+
+nav ul li {
+	margin: 0 20px;
+	font-size: 20px;
+}

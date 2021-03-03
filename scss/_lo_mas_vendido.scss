@@ -1,0 +1,78 @@
+.mas_vendido .contenedor {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.mas_vendido h2 {
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+	border-top: 2px solid #ededed;
+	border-bottom: 2px solid #ededed;
+	padding: 5% 0;
+}
+
+.mas_vendido article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5% 0;
+	border: 2px solid rgba(0, 0, 0, 0.125);
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.mas_vendido .contenedor_img img {
+	width: 100%;
+	max-height: 250px;
+}
+
+.mas_vendido .contenedor_img {
+	width: 150px;
+}
+
+.mas_vendido article .descripcion {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.mas_vendido article h3 {
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+.mas_vendido article span {
+	text-decoration: line-through;
+	color: rgb(155, 151, 151);
+}
+
+.mas_vendido article p {
+	text-align: center;
+	color: rgb(155, 151, 151);
+	margin-bottom: 5px;
+}
+
+.mas_vendido article .precio {
+	color: $color_principal;
+	font-size: 25px;
+}
+
+.mas_vendido article .cuotas strong {
+	color: #8d8d8e;
+	font-size: 18px;
+}
+
+.mas_vendido article .boton_comprar {
+	border: 1px solid $color_principal;
+	background-color: $color_principal;
+	color: $color_secundario;
+	padding: 10px;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+
+.mas_vendido article .boton_comprar:hover {
+	background-color: $color_secundario;
+	color: $color_principal;
+}

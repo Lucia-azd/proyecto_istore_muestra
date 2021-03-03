@@ -1,0 +1,87 @@
+@media screen and (min-width: 767px) {
+	
+    /* HEADER */
+
+	header .logo_iconos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	header .iconos {
+		display: flex;
+		justify-content: unset;
+		width: unset;
+	}
+
+	header .iconos a.carrito {
+		margin: 0 30px;
+	}
+
+	/* LO MAS VENDIDO */
+
+	.mas_vendido h2 {
+		padding: 2% 0;
+	}
+
+	.mas_vendido .contenedor_img {
+		width: 200px;
+	}
+
+	.mas_vendido article .boton_comprar {
+		margin-top: 10px;
+	}
+
+	.mas_vendido article .boton_comprar a {
+		padding: 15px;
+		font-size: 20px;
+		border-radius: 15px;
+	}
+
+	/* POR QUE ELEGIRNOS */
+
+	.elegirnos h2 {
+		padding: 2% 0;
+	}
+
+	.elegirnos article {
+		width: 60%;
+		border-top: 2px solid #ededed;
+	}
+
+	.elegirnos article.item_uno {
+		border-top: unset;
+	}
+
+	.elegirnos i {
+		font-size: 70px;
+	}
+
+	.elegirnos p {
+		padding-top: 5%;
+		font-size: 20px;
+	}
+
+	/* PAGINAS PRODUCTOS */
+
+	@import "contenedores_grid";
+
+	.productos article h3 {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	/* FOOTER */
+
+	footer .contenedor {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: unset;
+	}
+
+	footer .links_footer {
+		flex-direction: column;
+	}
+}

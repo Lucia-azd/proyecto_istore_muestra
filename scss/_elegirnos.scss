@@ -1,0 +1,38 @@
+.elegirnos {
+	margin: 10% 0;
+}
+
+.elegirnos .contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f6f6f6;
+	border-radius: 10px 10px 0 0;
+	border: 10px;
+}
+
+.elegirnos h2 {
+	width: 100%;
+	text-align: center;
+	padding: 5% 0;
+	border: 2px solid #ededed;
+	border-radius: 10px 10px 0 0;
+	background-color: $color_secundario;
+}
+
+.elegirnos article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	padding: 5% 0;
+}
+
+.elegirnos i {
+	font-size: 50px;
+}
+
+.elegirnos p {
+	text-align: center;
+	padding-top: 10%;
+}

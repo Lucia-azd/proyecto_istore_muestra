@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+@import "mixins";
+@import "variables";
+
+/* GENERALES */
+@import "generales";
+
+/* HEADER */
+
+@import "header";
+
+/* MODAL */
+
+@import "modal";
+
+/* FOOTER */
+
+@import "footer";
+
+
+/*
+*
+*
+INDEX  
+*
+*
+*/
+
+/* LO MAS VENDIDO */
+
+@import "lo_mas_vendido";
+
+/* POR QUE ELEGIRNOS (EN PROCESO)*/
+
+@import "elegirnos";
+
+
+/* 
+*
+*
+*
+*PAGINAS 
+*
+*
+*
+*/
+
+/* LISTA GUIA */
+
+@import "lista_guia";
+
+/* MENU SECUNDARIO */
+
+@import "menu_secundario";
+
+/* PRODUCTOS */
+
+@import "productos";
+
+
+/* 
+*
+*
+*
+MEDIA QUERIE
+*
+*
+*
+*/
+
+@import "media_querie_768px";
+
+@import "media_querie_1024px";
+
+@import "media_querie_1440px";
+

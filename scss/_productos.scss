@@ -1,0 +1,67 @@
+.productos .titulo_producto {
+	color: $color_principal;
+}
+
+.productos .titulo_producto h2 {
+	margin: 25px 0;
+	font-size: 35px;
+}
+
+.productos article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5% 0;
+	border: 2px solid rgba(0, 0, 0, 0.125);
+	border-radius: 10px;
+	padding: 30px 0;
+}
+
+.productos .contenedor_img_producto {
+	width: 100px;
+}
+
+.productos .contenedor_img_producto img {
+	width: 100%;
+	max-height: 250px;
+}
+
+.productos article h3 {
+	margin-top: 20px;
+}
+
+.productos article .descripcion_producto {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	border-top: 2px solid rgba(0, 0, 0, 0.125);
+	width: 100%;
+}
+
+.productos article .descripcion_producto p {
+	margin-bottom: unset;
+	margin: 0 10%;
+}
+
+.productos article .descripcion_producto .precio {
+	padding-bottom: 10px;
+}
+
+.productos article .descripcion_producto .titulo_precio,
+.productos article .descripcion_producto .titulo_cuotas {
+	color: rgb(155, 151, 151);
+}
+
+.productos article .boton_comprar {
+	border: 1px solid $color_principal;
+	background-color: $color_principal;
+	color: $color_secundario;
+	padding: 10px;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+
+.productos article .boton_comprar:hover {
+	background-color: $color_secundario;
+	color: $color_principal;
+}

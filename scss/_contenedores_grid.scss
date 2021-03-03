@@ -1,0 +1,77 @@
+/* CONTENEDOR GRID GENERAL SECCION MENU SECUNDARIO Y PRODUCTOS */
+
+.contenedor_grid {
+    @include grid(0.5fr 1.5fr, repeat(2, 1fr), 0px, 15px);
+    grid-template-areas:
+        "menu_secundario productos"
+        "menu_secundario productos";
+}
+
+.menu_secundario {
+    grid-area: menu_secundario;
+}
+
+.productos {
+    grid-area: productos;
+}
+
+/* CONTENEDOR GRID PRODUCTOS */
+
+.contenedor_grid_productos_iphone_12 {
+    @include grid(repeat(3, 1fr), repeat(2, 1fr), 0px, 5px);
+    grid-template-areas:
+        "producto_uno producto_dos producto_tres"
+        "producto_cuatro . .";
+}
+
+.contenedor_grid_productos_iphone_11 {
+    @include grid(repeat(2, 0.35fr), 1fr, 0px, 5px);
+    grid-template-areas:
+        "producto_uno producto_dos .";
+}
+
+.contenedor_grid_productos_ipad_pro {
+    @include grid(repeat(3, 1fr), 1fr, 0px, 5px); 
+    grid-template-areas:
+        "producto_uno producto_dos producto_tres";
+}
+
+.contenedor_grid_productos_iphone_X {
+    @extend .contenedor_grid_productos_iphone_12;
+}
+
+.contenedor_grid_productos_mac_air {
+    @extend .contenedor_grid_productos_iphone_11;
+}
+
+.contenedor_grid_productos_mac_pro {
+    @extend .contenedor_grid_productos_iphone_11;
+}
+
+.contenedor_grid_productos_imac {
+    @extend .contenedor_grid_productos_iphone_11;
+}
+
+.contenedor_grid_productos_ipad {
+    @extend .contenedor_grid_productos_iphone_11;
+}
+
+.contenedor_grid_productos_ipad_air {
+    @extend .contenedor_grid_productos_iphone_11;
+}
+
+.productos article.item_producto_uno {
+    grid-area: producto_uno;
+}
+
+.productos article.item_producto_dos {
+    grid-area: producto_dos;
+}
+
+.productos article.item_producto_tres {
+    grid-area: producto_tres;
+}
+
+.productos article.item_producto_cuatro {
+    grid-area: producto_cuatro;
+}
